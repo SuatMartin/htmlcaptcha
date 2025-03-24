@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios e Instrucciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Formularios e Instrucciones para Someter Preguntas</h1>
+    </header>
+    <main>
+        <p>
+            <strong>Instrucciones:</strong><br>
+            Nota: Si ya se ha registrado previamente y tiene su código, puede saltar al paso 4.
+            <br>1. Abrir el primer formulario.
+            <br>2. Escriba su correo electrónico y someta para registrarse.
+            <br>3. Reciba su código de registro en su correo electrónico.
+            <br>4. Abra el segundo formulario.
+            <br>5. Llene el formulario con la información de su pregunta.
+            <br>6. Asegure escribir el código de registro de manera correcta y someta el formulario.
+            <br>7. Espere a recibir su respuesta, contestaremos lo más pronto posible.
+        </p>
+
+        <!-- reCAPTCHA Container -->
+        <div class="g-recaptcha" data-sitekey="6LdriP4qAAAAADJat7OhAuM24gSJ2ILCUjctk9YR" data-callback="enableButtons"></div>
+
+        <!-- Buttons (Initially Disabled) -->
+        <button id="form1" disabled onclick="openForm('https://docs.google.com/forms/d/e/1FAIpQLSeP-LpNc2i4TtByY2VB-3NzDFU0prU3FWJE1ZDwtzhgUmlFuA/viewform?usp=header')">
+            Formulario de registro
+        </button>
+        <button id="form2" disabled onclick="openForm('https://docs.google.com/forms/d/e/1FAIpQLSdphGElD2QqblDC40rKouxK18JijHNhTx7xd8tik3Dt5mzHJw/viewform?usp=header')">
+            Formulario de preguntas
+        </button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
