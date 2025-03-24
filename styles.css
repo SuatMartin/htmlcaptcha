@@ -16,6 +16,13 @@ main {
     margin-top: 20px;
 }
 
+/* Center reCAPTCHA */
+.captcha-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 button {
     display: block;
     margin: 10px auto;
